@@ -49,7 +49,7 @@
         }
 
         .name {
-            font-size: 1.6em;
+            font-size: 1.4em; /* Decrease font size for .name on mobile */
             font-family: 'Roboto', sans-serif;
             color: #cc6699;
             text-align: center; /* Center align name */
@@ -57,9 +57,12 @@
         }
 
         .venue {
+            font-size: 1em; /* Adjust font size for venue on mobile */
+            white-space: nowrap; /* Prevent line breaks */
+            overflow: hidden; /* Hide overflow text */
+            text-overflow: ellipsis; /* Show ellipsis for overflow text */
             text-align: center; /* Center align venue */
             font-weight: bold;
-            font-size: 1.2em;
         }
 
         .compliments {
@@ -113,9 +116,6 @@
                 font-size: 1.4em; /* Decrease font size for .name on mobile */
                 margin-bottom: 5px; /* Reduce margin bottom for spacing */
             }
-            .venue {
-                font-size: 1em; /* Adjust font size for venue on mobile */
-            }
             .contact-no {
                 font-size: 1em; /* Adjust font size for contact no */
             }
@@ -165,7 +165,4 @@
         <hr>
         <h4 class="compliments">With Best Compliments from:</h4>
         <h5 class="compliments">Amalrajan, Maria Joseph, Thangam & Family</h5>
-    </div>
-</body>
-
-</html>
+    </div
